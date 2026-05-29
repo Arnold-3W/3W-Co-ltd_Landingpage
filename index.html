@@ -607,18 +607,28 @@
       line-height: 1.7;
     }
 
-    .about-badge {
+        .about-badge {
       position: absolute;
-      bottom: -24px; right: 32px;
+      bottom: -28px; right: 32px;
       background: var(--gold);
       color: var(--navy);
       border-radius: 14px;
-      padding: 16px 24px;
+      padding: 14px 22px;
       font-weight: 700;
       font-size: 0.85rem;
+      line-height: 1.25;
+      white-space: nowrap;
       box-shadow: var(--shadow-lg);
+      z-index: 2;
     }
-    .about-badge strong { display: block; font-size: 1.6rem; font-family: var(--font-head); }
+    .about-badge strong {
+      display: block;
+      font-size: 1.5rem;
+      font-family: var(--font-head);
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+    .about-badge span { display: block; }
 
     .about-text { padding-top: 12px; }
     .about-text .section-title { margin-bottom: 20px; }
@@ -1490,11 +1500,11 @@
             aircraft inspection, maintenance support, and supply chain management —
             with solutions tailored to your specific operational requirements.
           </p>
-          <div class="about-badge">
-            <strong>HCM</strong>
-            Ho Chi Minh City HQ
-          </div>
-        </div>
+                </div>
+      <div class="about-badge">
+        <strong>HCM</strong>
+        <span>Ho Chi Minh City HQ</span>
+      </div>
       </div>
 
       <div class="about-text fade-in">
